@@ -10,13 +10,13 @@ menu.addEventListener('click', closeBtn);
 function closeBtn() {
    let btnDisplay = menu.getAttribute('src');
    console.log(btnDisplay);
-   if (btnDisplay === '../starter-code/assets/shared/icon-hamburger.svg') {
+   if (btnDisplay === '../starter-code/assets/shared/icon-hamburger.svg' || btnDisplay === '/starter-code/assets/shared/icon-hamburger.svg') {
       console.log('true');
       menu.setAttribute('src', '../starter-code/assets/shared/icon-close.svg');
       nav.style.display = 'grid';
      
    }
-    if (btnDisplay === '../starter-code/assets/shared/icon-close.svg') {
+    if (btnDisplay === '../starter-code/assets/shared/icon-close.svg' || btnDisplay === '/starter-code/assets/shared/icon-close.svg') {
       console.log('true');
       menu.setAttribute('src', '../starter-code/assets/shared/icon-hamburger.svg');
       nav.style.display = 'none';
